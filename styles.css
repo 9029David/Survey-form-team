@@ -1,0 +1,62 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.4rem;
+    color: var(--color-white);
+    background-image: url(https://getwallpapers.com/wallpaper/full/a/7/f/170322.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto 0 auto;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--color-darkblue);
+}
+
+.survey-form {
+    background-color: var(--color-darkblue);
+    padding: 1.5rem;
+    border-radius: .25rem;
+}
+
+.control-input, .control-select, .control-textarea {
+    width: 100%;
+    border-radius: .2rem;
+    border: none;
+    padding: .5rem 0;
+    box-sizing: border-box;
+}
+
+.control-buttom {
+    width: 100%;
+    border-radius: .2rem;
+    border: none;
+    color: inherit;
+    background-color: var(--color-orange);
+    padding: .5rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.date {
+    padding: .4rem 0;
+}
+
+label {
+    display: block;
+}
+
+:root {
+    --color-orange: #fc4101;
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+}

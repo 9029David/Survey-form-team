@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form team Cloud 9</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Form inscription team Cloud9</h1>
+        <p id="description">Welcome to the cloud9 team, complete the requested information</p>
+      </header>
+      <form class="survey-form" id="survey-form">
+        <div class="date">
+          <label for="nickname" id="nickname-label">Nickname</label>
+          <input id="nickname" type="text" placeholder=" *Enter your nickname" class="control-input" required>
+        </div>
+        <div class="date">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" placeholder=" *Enter your name" class="control-input" required>
+        </div>
+        <div class="date">
+          <label for="last-name" id="last-name-label">Last name</label>
+          <input id="last-name" type="text" placeholder=" *Enter your Last name" class="control-input" required>
+        </div>
+        <div class="date">
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" placeholder=" *Enter your email" class="control-input" required>
+        </div>
+        <div class="date">
+          <label for="number" id="number-label">Age</label>
+          <input id="number" type="number" placeholder=" *Enter your age" min="13" max="32" class="control-input" required>
+        </div>
+        <div class="date">
+          <p>How many hours do you have in play?</p>
+          <label for="hours-0" id="hs-label"><input type="radio" name="hours" value="0-1000" id="hours-0" checked> 0 to 1000hs</label>
+          <label for="hours-1" id="hs-label"><input type="radio" name="hours" value="1000-5000" id="hours-1"> 1000hs to 5000hs</label>
+          <label for="hours-2" id="hs-label"><input type="radio" name="hours" value="5000-10000" id="hours-2"> 5000hs to 10000hs</label>
+          <label for="hours-3" id="hs-label"><input type="radio" name="hours" value="10000+" id="hours-3"> +10000hs</label>
+        </div>
+        <div class="date">
+          <p>What is your role in the game?</p>
+          <select id="dropdown" class="control-select">
+            <option value="">Select an option</option>
+            <option value="entry fragger">Entry fragger</option>
+            <option value="support">Support</option>
+            <option value="in-game-leader">In-game leader</option>
+            <option value="lurker">Lurker</option>
+            <option value="awper">AWPer</option>
+          </select>
+        </div>
+        <div class="date">
+          <p>Which of these maps do you master?</p>
+          <label><input type="checkbox" value="cache"> Cache</label>
+          <label><input type="checkbox" value="cobblestone"> Cobblestone</label>
+          <label><input type="checkbox" value="dust2"> Dust 2</label>
+          <label><input type="checkbox" value="mirage"> Mirage</label>
+          <label><input type="checkbox" value="nuke"> Nuke</label>
+          <label><input type="checkbox" value="overpass"> Overpass</label>
+          <label><input type="checkbox" value="train"> Train</label>
+        </div>
+        <div class="date">
+          <label for="comments">How would you describe yourself as a player?</label>
+          <textarea class="control-textarea" id="comments" name="comments" placeholder=" *Player presentation..." rows="3" cols="30"></textarea>
+        </div>
+        <div class="date">
+          <button id="submit" type="submit" class="control-buttom">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
